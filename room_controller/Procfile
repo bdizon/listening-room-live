@@ -1,1 +1,1 @@
-web: gunicorn room_controller.wsgi --log-file -
+web: gunicorn room_controller.wsgi 
