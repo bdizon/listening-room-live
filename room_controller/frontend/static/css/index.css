@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+}
+
+/* element with id="main"*/
+#main {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* element with id="app"*/
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+/* element with className="center"*/
+/* centers content inside of what its contained in*/
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#gradient {
+    width: 100%;
+    height: 800px;
+    padding: 0px;
+    margin: 0px;
+  }
