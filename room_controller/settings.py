@@ -24,10 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'xjsp&vifch*1x8)3pi9@@r17#l(zvp)tf8(_6^6-fhb&j837aw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
 ALLOWED_HOSTS = ['pandemic-party.herokuapp.com', '127.0.0.1']
+# ALLOWED_HOSTS = []
 # ['127.0.0.1','0.0.0.0']
 
 
@@ -125,9 +126,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 # to fix erver error (500)?
 LOGGING = {
